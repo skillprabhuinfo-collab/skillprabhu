@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skyline Whitefield Residences | 2 &amp; 3 BHK Apartments in Whitefield, Bangalore</title>
+<meta name="description" content="Premium 2 BHK and 3 BHK apartments in Whitefield, Bangalore. Near ITPL and Whitefield Metro. Book a free site visit today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ==========================================================
+   1. BRAND TOKENS  (change these to rebrand the whole page)
+   ========================================================== */
+:root{
+  --navy:#0b1f3a;
+  --navy-2:#13315c;
+  --gold:#c9a24b;
+  --gold-dark:#a9852f;
+  --cream:#faf7f0;
+  --ink:#1c2430;
+  --muted:#5f6b7a;
+  --line:#e6e1d4;
+  --white:#fff;
+  --danger:#c0392b;
+  --success:#1f8a4c;
+  --radius:14px;
+  --shadow:0 10px 30px rgba(11,31,58,.12);
+  --font-head:'Playfair Display',Georgia,serif;
+  --font-body:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+}
+
+/* ==========================================================
+   2. BASE
+   ========================================================== */
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:var(--font-body);color:var(--ink);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+h1,h2,h3{font-family:var(--font-head);line-height:1.2;color:var(--navy)}
+.container{width:min(1180px,92%);margin-inline:auto}
+section{padding:80px 0}
+.eyebrow{display:inline-block;color:var(--gold-dark);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;margin-bottom:10px}
+.section-head{max-width:680px;margin-bottom:44px}
+.section-head h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:12px}
+.section-head p{color:var(--muted)}
+.center{text-align:center;margin-inline:auto}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 26px;border-radius:999px;font-weight:600;font-size:.95rem;border:2px solid transparent;cursor:pointer;transition:.25s;font-family:inherit}
+.btn-gold{background:var(--gold);color:var(--navy)}
+.btn-gold:hover{background:var(--gold-dark);color:#fff;transform:translateY(-2px)}
+.btn-outline{border-color:var(--navy);color:var(--navy);background:transparent}
+.btn-outline:hover{background:var(--navy);color:#fff}
+.btn-block{width:100%}
+
+/* Scroll reveal */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* ==========================================================
+   3. HEADER
+   ========================================================== */
+header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--font-head);font-weight:700;font-size:1.25rem;color:var(--navy)}
+.logo svg{width:34px;height:34px}
+.logo small{display:block;font-family:var(--font-body);font-size:.62rem;letter-spacing:.2em;color:var(--gold-dark);font-weight:600;margin-top:-4px}
+.nav-links{display:flex;gap:26px;align-items:center}
+.nav-links a{font-size:.9rem;font-weight:500;color:var(--ink);position:relative}
+.nav-links a:not(.btn)::after{content:"";position:absolute;left:0;bottom:-5px;width:0;height:2px;background:var(--gold);transition:.25s}
+.nav-links a:not(.btn):hover::after{width:100%}
+.menu-toggle{display:none;background:none;border:0;cursor:pointer;padding:6px}
+.menu-toggle svg{width:28px;height:28px;stroke:var(--navy)}
+
+/* ==========================================================
+   4. HERO
+   ========================================================== */
+.hero{position:relative;padding:0;min-height:calc(100vh - 70px);display:flex;align-items:center;color:#fff;
+  background:linear-gradient(105deg,rgba(11,31,58,.92) 0%,rgba(11,31,58,.7) 55%,rgba(11,31,58,.45) 100%),
+  url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1800&q=70') center/cover no-repeat;
+  background-color:var(--navy)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding:70px 0}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.badge{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);padding:7px 14px;border-radius:999px;font-size:.8rem;font-weight:500}
+.badge svg{width:16px;height:16px;stroke:var(--gold)}
+.hero h1{color:#fff;font-size:clamp(2.2rem,5.4vw,3.8rem);margin-bottom:16px}
+.hero h1 span{color:var(--gold)}
+.hero p.lead{font-size:1.1rem;color:#dfe6f0;max-width:520px;margin-bottom:22px}
+.price-line{display:inline-block;border-left:4px solid var(--gold);padding:6px 16px;font-size:1.05rem;margin-bottom:26px;background:rgba(255,255,255,.07)}
+.price-line strong{color:var(--gold);font-size:1.4rem;font-family:var(--font-head)}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero .btn-outline{border-color:#fff;color:#fff}
+.hero .btn-outline:hover{background:#fff;color:var(--navy)}
+
+/* Form card (shared) */
+.form-card{background:#fff;color:var(--ink);padding:30px;border-radius:var(--radius);box-shadow:0 20px 50px rgba(0,0,0,.3)}
+.form-card h3{font-size:1.5rem;margin-bottom:4px}
+.form-card .sub{color:var(--muted);font-size:.9rem;margin-bottom:18px}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:.82rem;font-weight:600;margin-bottom:5px;color:var(--navy)}
+.field input,.field select,.field textarea{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;font:inherit;font-size:.95rem;background:#fff;color:var(--ink);transition:.2s}
+.field textarea{resize:vertical;min-height:84px}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,162,75,.2)}
+.field.invalid input,.field.invalid select,.field.invalid textarea{border-color:var(--danger)}
+.error{display:none;color:var(--danger);font-size:.78rem;margin-top:4px}
+.field.invalid .error{display:block}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:.8rem;color:var(--muted);margin-bottom:14px}
+.consent input{margin-top:3px;accent-color:var(--navy);width:16px;height:16px;flex:none}
+.consent.invalid{color:var(--danger)}
+.form-success{display:none;text-align:center;padding:26px 10px}
+.form-success svg{width:58px;height:58px;stroke:var(--success);margin:0 auto 12px}
+.form-success h3{margin-bottom:6px}
+.form-success p{color:var(--muted);font-size:.92rem}
+.form-card.done form{display:none}
+.form-card.done .form-success{display:block}
+.fineprint{font-size:.72rem;color:var(--muted);margin-top:10px;text-align:center}
+
+/* ==========================================================
+   5. OVERVIEW
+   ========================================================== */
+.overview{background:var(--cream)}
+.overview-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.overview img{border-radius:var(--radius);box-shadow:var(--shadow);aspect-ratio:4/3;object-fit:cover;width:100%}
+.overview p{color:var(--muted);margin-bottom:16px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px 10px;text-align:center}
+.stat b{display:block;font-family:var(--font-head);font-size:2rem;color:var(--navy)}
+.stat span{font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+
+/* ==========================================================
+   6. CONFIGURATIONS
+   ========================================================== */
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:30px}
+.config-card{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff;transition:.3s;box-shadow:0 4px 14px rgba(11,31,58,.06)}
+.config-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.plan{position:relative;background:var(--cream);padding:26px;border-bottom:1px solid var(--line)}
+.plan svg{width:100%;height:200px}
+.tag{position:absolute;top:16px;left:16px;background:var(--navy);color:var(--gold);padding:5px 14px;border-radius:999px;font-size:.78rem;font-weight:600;letter-spacing:.06em}
+.config-body{padding:26px}
+.config-body h3{font-size:1.7rem;margin-bottom:4px}
+.config-meta{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;margin:16px 0 20px;font-size:.9rem}
+.config-meta div span{display:block;color:var(--muted);font-size:.74rem;text-transform:uppercase;letter-spacing:.08em}
+.config-meta div b{color:var(--navy)}
+.price{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.price strong{font-family:var(--font-head);font-size:1.7rem;color:var(--gold-dark)}
+.price small{display:block;color:var(--muted);font-size:.74rem}
+.note{font-size:.78rem;color:var(--muted);margin-top:22px}
+
+/* ==========================================================
+   7. AMENITIES
+   ========================================================== */
+.amenities{background:var(--navy);color:#fff}
+.amenities h2{color:#fff}
+.amenities .section-head p{color:#b9c5d6}
+.amenity-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.amenity{text-align:center;padding:26px 12px;border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);transition:.3s;background:rgba(255,255,255,.03)}
+.amenity:hover{background:rgba(201,162,75,.14);border-color:var(--gold);transform:translateY(-4px)}
+.amenity svg{width:40px;height:40px;stroke:var(--gold);margin:0 auto 12px}
+.amenity span{font-size:.9rem;font-weight:500}
+
+/* ==========================================================
+   8. LOCATION
+   ========================================================== */
+.location-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:stretch}
+.map{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);min-height:420px;border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;min-height:420px;border:0}
+.places{display:grid;gap:12px;align-content:start}
+.place{display:flex;gap:14px;align-items:center;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.place svg{width:28px;height:28px;stroke:var(--gold-dark);flex:none}
+.place div{flex:1}
+.place b{display:block;font-size:.95rem;color:var(--navy)}
+.place small{color:var(--muted)}
+.place em{font-style:normal;font-weight:600;color:var(--navy);font-size:.88rem;background:var(--cream);padding:4px 10px;border-radius:999px;white-space:nowrap}
+
+/* ==========================================================
+   9. GALLERY + LIGHTBOX
+   ========================================================== */
+.gallery{background:var(--cream)}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:14px}
+.gallery-grid button{border:0;padding:0;cursor:zoom-in;border-radius:12px;overflow:hidden;background:#ddd;position:relative}
+.gallery-grid button:nth-child(1){grid-column:span 2;grid-row:span 2}
+.gallery-grid button:nth-child(6){grid-column:span 2}
+.gallery-grid img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gallery-grid button:hover img{transform:scale(1.08)}
+.lightbox{position:fixed;inset:0;background:rgba(5,12,25,.92);z-index:300;display:none;align-items:center;justify-content:center;padding:20px}
+.lightbox.open{display:flex}
+.lightbox img{max-height:86vh;max-width:92vw;border-radius:10px}
+.lb-btn{position:absolute;background:rgba(255,255,255,.14);border:0;color:#fff;width:46px;height:46px;border-radius:50%;font-size:1.6rem;cursor:pointer;line-height:1}
+.lb-btn:hover{background:var(--gold);color:var(--navy)}
+.lb-close{top:20px;right:20px}.lb-prev{left:20px;top:50%}.lb-next{right:20px;top:50%}
+
+/* ==========================================================
+   10. WHY US + TESTIMONIALS
+   ========================================================== */
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.why-item{padding:26px;border-radius:var(--radius);border:1px solid var(--line);background:#fff}
+.why-item svg{width:34px;height:34px;stroke:var(--gold-dark);margin-bottom:12px}
+.why-item h3{font-size:1.2rem;margin-bottom:6px;font-family:var(--font-body);font-weight:600}
+.why-item p{color:var(--muted);font-size:.92rem}
+.testimonials{margin-top:56px;display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.quote{background:var(--cream);padding:28px;border-radius:var(--radius);position:relative}
+.stars{color:var(--gold);letter-spacing:3px;margin-bottom:10px}
+.quote p{font-size:.95rem;margin-bottom:16px}
+.who{display:flex;gap:12px;align-items:center}
+.avatar{width:44px;height:44px;border-radius:50%;background:var(--navy);color:var(--gold);display:grid;place-items:center;font-weight:700}
+.who b{display:block;font-size:.92rem;color:var(--navy)}
+.who small{color:var(--muted)}
+
+/* ==========================================================
+   11. BOOKING
+   ========================================================== */
+.booking{background:linear-gradient(135deg,var(--navy),var(--navy-2));color:#fff}
+.booking-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.booking h2{color:#fff;font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:14px}
+.booking .eyebrow{color:var(--gold)}
+.booking p{color:#cbd6e6;margin-bottom:20px}
+.checks li{display:flex;gap:10px;margin-bottom:12px;color:#e8eef7}
+.checks svg{width:22px;height:22px;stroke:var(--gold);flex:none;margin-top:2px}
+
+/* ==========================================================
+   12. FAQ
+   ========================================================== */
+.faq-list{max-width:820px;margin-inline:auto}
+.faq-item{border:1px solid var(--line);border-radius:12px;margin-bottom:12px;background:#fff;overflow:hidden}
+.faq-q{width:100%;text-align:left;background:none;border:0;padding:18px 22px;font:inherit;font-weight:600;color:var(--navy);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:14px}
+.faq-q svg{width:20px;height:20px;stroke:var(--gold-dark);transition:.3s;flex:none}
+.faq-item.open .faq-q svg{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-a p{padding:0 22px 20px;color:var(--muted);font-size:.94rem}
+
+/* ==========================================================
+   13. CONTACT
+   ========================================================== */
+.contact{background:var(--cream)}
+.contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.contact-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;text-align:center}
+.contact-card svg{width:34px;height:34px;stroke:var(--gold-dark);margin:0 auto 12px}
+.contact-card h3{font-family:var(--font-body);font-size:1rem;font-weight:600;margin-bottom:6px}
+.contact-card p,.contact-card a{color:var(--muted);font-size:.92rem}
+.contact-card a:hover{color:var(--gold-dark)}
+.wa-btn{background:#25d366;color:#fff;margin-top:10px;padding:10px 20px}
+.wa-btn:hover{background:#1ebe5b}
+
+/* ==========================================================
+   14. FOOTER + FLOATING BUTTONS
+   ========================================================== */
+footer{background:#07152a;color:#9fb0c6;padding:50px 0 24px;font-size:.84rem}
+.foot-top{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;margin-bottom:26px}
+.foot-top .logo{color:#fff}
+.foot-links{display:flex;gap:20px;flex-wrap:wrap}
+.foot-links a:hover{color:var(--gold)}
+.disclaimer{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;line-height:1.7}
+.copy{margin-top:14px;text-align:center}
+.float{position:fixed;right:18px;z-index:150;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;box-shadow:0 8px 22px rgba(0,0,0,.28);transition:.25s}
+.float:hover{transform:scale(1.1)}
+.float svg{width:28px;height:28px}
+.float-wa{bottom:90px;background:#25d366}
+.float-call{bottom:22px;background:var(--gold)}
+.float-call svg{stroke:var(--navy)}
+
+/* ==========================================================
+   15. RESPONSIVE
+   ========================================================== */
+@media (max-width:1024px){
+  .amenity-grid{grid-template-columns:repeat(3,1fr)}
+  .contact-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:860px){
+  section{padding:60px 0}
+  .menu-toggle{display:block}
+  .nav-links{position:absolute;top:70px;left:0;right:0;background:#fff;flex-direction:column;padding:22px;gap:18px;border-bottom:1px solid var(--line);display:none}
+  .nav-links.open{display:flex}
+  .hero-grid,.overview-grid,.location-grid,.booking-grid{grid-template-columns:1fr}
+  .cards,.why-grid,.testimonials{grid-template-columns:1fr}
+  .gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:170px}
+  .gallery-grid button:nth-child(1){grid-column:span 2}
+  .gallery-grid button:nth-child(6){grid-column:span 2}
+}
+@media (max-width:520px){
+  .amenity-grid{grid-template-columns:repeat(2,1fr)}
+  .contact-grid,.row{grid-template-columns:1fr}
+  .stats{gap:10px}
+  .form-card{padding:22px}
+}
+</style>
+</head>
+
+<body>
+
+<!-- SVG icon sprite: reusable inline icons (no external icon libraries) -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.4 8.4 8 9 4.6-.6 8-4 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-train" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M5 11h14M9 21l2-4M15 21l-2-4"/><circle cx="9" cy="14" r=".6"/><circle cx="15" cy="14" r=".6"/></symbol>
+  <symbol id="i-pool" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18c2 0 2-1.5 4-1.5s2 1.5 4 1.5 2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5M2 22c2 0 2-1.5 4-1.5s2 1.5 4 1.5 2-1.5 4-1.5 2 1.5 4 1.5"/><path d="M8 14V6a2 2 0 0 1 4 0M14 14V6a2 2 0 0 1 4 0M8 9h6"/></symbol>
+  <symbol id="i-gym" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7v10M18 7v10M3 9v6M21 9v6M6 12h12"/></symbol>
+  <symbol id="i-club" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></symbol>
+  <symbol id="i-kids" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="6" r="3"/><path d="M6 21v-5a6 6 0 0 1 12 0v5M3 11l3 2M21 11l-3 2"/></symbol>
+  <symbol id="i-run" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="14" cy="4" r="2"/><path d="m8 21 3-6-3-3 3-4 4 3 3 1M11 8l-3 1"/></symbol>
+  <symbol id="i-tree" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-7M12 15a5 5 0 0 0 5-5 5 5 0 0 0-2-4 3.5 3.5 0 0 0-6 0 5 5 0 0 0-2 4 5 5 0 0 0 5 5Z"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></symbol>
+  <symbol id="i-ev" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="10" height="18" rx="2"/><path d="M15 9h2a2 2 0 0 1 2 2v5a1.5 1.5 0 0 0 3 0V8l-3-3M9 8l-2 4h4l-2 4"/></symbol>
+  <symbol id="i-laptop" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="11" rx="1.5"/><path d="M2 20h20"/></symbol>
+  <symbol id="i-office" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 8h2M13 8h2M9 12h2M13 12h2M10 21v-4h4v4"/></symbol>
+  <symbol id="i-school" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 9 10-5 10 5-10 5L2 9Z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></symbol>
+  <symbol id="i-hospital" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M12 9v6M9 12h6"/></symbol>
+  <symbol id="i-mall" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 13H6L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="m11 12 9-9M16 7l3 3"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h13v4"/><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="16.5" cy="13.5" r="1"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="#fff" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.2 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.2-4.6-4-4.8-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.4-.4.4c-.1.2-.3.3-.1.6.2.3.7 1.2 1.5 1.9 1 .9 1.9 1.2 2.2 1.3.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.6-.1 1.2Z"/></symbol>
+</svg>
+
+<!-- ============ 1. HEADER ============ -->
+<header>
+  <div class="container nav">
+    <a href="#top" class="logo" aria-label="Skyline Whitefield Residences home">
+      <svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect width="40" height="40" rx="9" fill="#0b1f3a"/><path d="M9 31V17l7-5v19M16 31V9l8-4v26M24 31V15l7 4v12" stroke="#c9a24b" stroke-width="2" stroke-linejoin="round"/></svg>
+      <span>Skyline Whitefield<small>RESIDENCES</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav-links" id="navLinks" aria-label="Main">
+      <a href="#overview">Overview</a>
+      <a href="#configurations">Configurations</a>
+      <a href="#amenities">Amenities</a>
+      <a href="#location">Location</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a href="#book" class="btn btn-gold">Book a Site Visit</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ 2. HERO ============ -->
+<section class="hero" aria-label="Introduction">
+  <div class="container hero-grid">
+    <div>
+      <div class="badges">
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><use href="#i-shield"/></svg> RERA Approved</span>
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><use href="#i-train"/></svg> Near Whitefield Metro</span>
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><use href="#i-key"/></svg> Possession Dec 2028</span>
+      </div>
+      <h1>Elevated living in the heart of <span>Whitefield</span></h1>
+      <p class="lead">Thoughtfully designed 2 &amp; 3 BHK residences minutes from ITPL, premium schools and Bangalore's finest retail and dining.</p>
+      <div class="price-line">Starting from <strong>₹1.15 Cr*</strong> &nbsp;|&nbsp; 2 &amp; 3 BHK Apartments</div>
+      <div class="hero-cta">
+        <a href="#book" class="btn btn-gold">Book a Site Visit</a>
+        <a href="#configurations" class="btn btn-outline">View Floor Plans</a>
+      </div>
+    </div>
+
+    <!-- Hero quick-enquiry form -->
+    <div class="form-card" id="heroCard">
+      <form id="heroForm" novalidate data-form>
+        <h3>Get the Price Sheet</h3>
+        <p class="sub">Share your details and our advisor will call you within 30 minutes.</p>
+        <div class="field">
+          <label for="h-name">Full Name</label>
+          <input id="h-name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+          <span class="error">Please enter your full name (min 2 characters).</span>
+        </div>
+        <div class="field">
+          <label for="h-phone">Mobile Number</label>
+          <input id="h-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="10-digit mobile number" maxlength="10" required>
+          <span class="error">Enter a valid 10-digit Indian mobile number.</span>
+        </div>
+        <div class="field">
+          <label for="h-config">Interested In</label>
+          <select id="h-config" name="config" required>
+            <option value="">Select configuration</option>
+            <option>2 BHK</option>
+            <option>3 BHK</option>
+          </select>
+          <span class="error">Please choose a configuration.</span>
+        </div>
+        <label class="consent"><input type="checkbox" name="consent" required> <span>I agree to be contacted by Skyline Whitefield Residences via call, SMS or WhatsApp.</span></label>
+        <button class="btn btn-gold btn-block" type="submit">Request Call Back</button>
+        <p class="fineprint">Your information is safe. No spam, ever.</p>
+      </form>
+      <div class="form-success" role="status" aria-live="polite">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"/><use href="#i-check"/></svg>
+        <h3>Thank you!</h3>
+        <p>We've received your details. Our advisor will call you shortly. <em>(Demo only: no data was sent.)</em></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. OVERVIEW ============ -->
+<section class="overview" id="overview">
+  <div class="container overview-grid">
+    <div class="reveal">
+      <span class="eyebrow">Project Overview</span>
+      <h2 style="font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:16px">An address that grows with your life</h2>
+      <p>Skyline Whitefield Residences is a gated community of contemporary 2 and 3 BHK homes set amid landscaped greens, designed for families and professionals who want city convenience without compromise.</p>
+      <p>Vastu-compliant layouts, abundant natural light and cross ventilation, premium specifications and over 30 lifestyle amenities, all within a short drive of Bangalore's biggest tech parks and the Purple Line Metro.</p>
+      <div class="stats">
+        <div class="stat"><b>6</b><span>Acres</span></div>
+        <div class="stat"><b>5</b><span>Towers</span></div>
+        <div class="stat"><b>520</b><span>Homes</span></div>
+      </div>
+    </div>
+    <div class="reveal">
+      <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1000&q=70" alt="Modern residential apartment tower with landscaped surroundings" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. CONFIGURATIONS ============ -->
+<section id="configurations">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Configurations</span>
+      <h2>Spacious homes, smartly planned</h2>
+      <p>Choose the layout that suits your lifestyle. Every home comes with a private balcony and premium finishes.</p>
+    </div>
+    <div class="cards">
+
+      <article class="config-card reveal">
+        <div class="plan">
+          <span class="tag">2 BHK</span>
+          <!-- Floor plan placeholder (replace with real plan image) -->
+          <svg viewBox="0 0 400 200" role="img" aria-label="2 BHK floor plan placeholder">
+            <g fill="none" stroke="#0b1f3a" stroke-width="2.5">
+              <rect x="10" y="10" width="380" height="180" rx="4"/>
+              <path d="M150 10v110M150 120H10M270 10v85M270 95h120M270 95v95M150 120h120"/>
+            </g>
+            <g font-family="Inter,sans-serif" font-size="12" fill="#5f6b7a" text-anchor="middle">
+              <text x="80" y="65">Master Bed</text><text x="210" y="65">Living</text>
+              <text x="330" y="55">Bed 2</text><text x="80" y="160">Kitchen</text>
+              <text x="210" y="160">Dining</text><text x="330" y="150">Balcony</text>
+            </g>
+          </svg>
+        </div>
+        <div class="config-body">
+          <h3>2 BHK Residence</h3>
+          <div class="config-meta">
+            <div><span>Super Built-up</span><b>1,150 – 1,300 sq ft</b></div>
+            <div><span>Bathrooms</span><b>2 Bath + Balcony</b></div>
+            <div><span>Facing</span><b>East / North</b></div>
+            <div><span>Parking</span><b>1 Covered</b></div>
+          </div>
+          <div class="price">
+            <div><small>Starting from</small><strong>₹1.15 Cr*</strong></div>
+            <a href="#book" class="btn btn-outline" data-prefill="2 BHK">Enquire Now</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="config-card reveal">
+        <div class="plan">
+          <span class="tag">3 BHK</span>
+          <svg viewBox="0 0 400 200" role="img" aria-label="3 BHK floor plan placeholder">
+            <g fill="none" stroke="#0b1f3a" stroke-width="2.5">
+              <rect x="10" y="10" width="380" height="180" rx="4"/>
+              <path d="M120 10v100M120 110H10M240 10v70M240 80h150M300 80v110M120 110h120M240 80v110"/>
+            </g>
+            <g font-family="Inter,sans-serif" font-size="11" fill="#5f6b7a" text-anchor="middle">
+              <text x="65" y="60">Master Bed</text><text x="180" y="60">Living</text>
+              <text x="315" y="48">Bed 2</text><text x="65" y="155">Bed 3</text>
+              <text x="180" y="155">Kitchen</text><text x="270" y="140">Dining</text><text x="345" y="140">Balcony</text>
+            </g>
+          </svg>
+        </div>
+        <div class="config-body">
+          <h3>3 BHK Residence</h3>
+          <div class="config-meta">
+            <div><span>Super Built-up</span><b>1,650 – 1,850 sq ft</b></div>
+            <div><span>Bathrooms</span><b>3 Bath + 2 Balconies</b></div>
+            <div><span>Facing</span><b>East / North</b></div>
+            <div><span>Parking</span><b>2 Covered</b></div>
+          </div>
+          <div class="price">
+            <div><small>Starting from</small><strong>₹1.65 Cr*</strong></div>
+            <a href="#book" class="btn btn-outline" data-prefill="3 BHK">Enquire Now</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+    <p class="note">*Prices are indicative, exclusive of registration, GST and other charges, and subject to change without notice. Floor plans are for representation only.</p>
+  </div>
+</section>
+
+<!-- ============ 5. AMENITIES ============ -->
+<section class="amenities" id="amenities">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow" style="color:var(--gold)">Amenities</span>
+      <h2>Life, beyond your front door</h2>
+      <p>Resort-style facilities for every age, so there's always something to do right at home.</p>
+    </div>
+    <div class="amenity-grid">
+      <div class="amenity reveal"><svg viewBox="0 0 24 24"><use href="#i-club"/></svg><span>Clubhouse</span></div>
+      <div class="amenity reveal"><svg viewBox="0 0 24 24"><use href="#i-pool"/></svg><span>Swimming Pool</span></div>
+      <div class="amenity reveal"><svg viewBox="0 0 24 24"><use href="#i-gym"/></svg><span>Fully-equipped Gym</span></div>
+      <div class="amenity reveal"><svg viewBox="0 0 24 24"><use href="#i-kids"/></svg><span>Kids Play Area</span></div>
+      <div class="amenity reveal"><svg viewBox="0 0 24 24"><use href="#i-run"/></svg><span>Jogging Track</span></div>
+      <div class="amenity reveal"><svg viewBox="0 0 24 24"><use href="#i-tree"/></svg><span>Landscaped Gardens</span></div>
+      <div class="amenity reveal"><svg viewBox="0 0 24 24"><use href="#i-shield"/></svg><span>24x7 Security</span></div>
+      <div class="amenity reveal"><svg viewBox="0 0 24 24"><use href="#i-bolt"/></svg><span>Power Backup</span></div>
+      <div class="amenity reveal"><svg viewBox="0 0 24 24"><use href="#i-ev"/></svg><span>EV Charging</span></div>
+      <div class="amenity reveal"><svg viewBox="0 0 24 24"><use href="#i-laptop"/></svg><span>Co-working Lounge</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. LOCATION ============ -->
+<section id="location">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Location Advantage</span>
+      <h2>Connected to everything that matters</h2>
+      <p>Whitefield is Bangalore's thriving IT corridor, with metro connectivity, top schools and healthcare close by.</p>
+    </div>
+    <div class="location-grid">
+      <div class="map reveal">
+        <iframe title="Map of Whitefield, Bangalore" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Whitefield,+Bengaluru,+Karnataka&output=embed"></iframe>
+      </div>
+      <div class="places">
+        <div class="place reveal"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><use href="#i-office"/></svg><div><b>ITPL / Tech Parks</b><small>Major IT hub</small></div><em>10 min</em></div>
+        <div class="place reveal"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><use href="#i-train"/></svg><div><b>Whitefield (Kadugodi) Metro</b><small>Purple Line</small></div><em>8 min</em></div>
+        <div class="place reveal"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><use href="#i-school"/></svg><div><b>Leading International Schools</b><small>Several within 5 km</small></div><em>7 min</em></div>
+        <div class="place reveal"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><use href="#i-hospital"/></svg><div><b>Multi-speciality Hospitals</b><small>24x7 emergency care</small></div><em>10 min</em></div>
+        <div class="place reveal"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><use href="#i-mall"/></svg><div><b>Phoenix Marketcity</b><small>Shopping &amp; dining</small></div><em>15 min</em></div>
+        <div class="place reveal"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><use href="#i-pin"/></svg><div><b>Varthur Road</b><small>Main arterial road</small></div><em>5 min</em></div>
+      </div>
+    </div>
+    <p class="note">Travel times are approximate and vary with traffic.</p>
+  </div>
+</section>
+
+<!-- ============ 7. GALLERY ============ -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Gallery</span>
+      <h2>A glimpse of your future home</h2>
+    </div>
+    <div class="gallery-grid" id="galleryGrid">
+      <button type="button" aria-label="Open image: building exterior"><img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=70" alt="Apartment tower exterior at dusk" loading="lazy"></button>
+      <button type="button" aria-label="Open image: living room"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=70" alt="Bright modern living room" loading="lazy"></button>
+      <button type="button" aria-label="Open image: kitchen"><img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=70" alt="Contemporary modular kitchen" loading="lazy"></button>
+      <button type="button" aria-label="Open image: bedroom"><img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=70" alt="Elegant master bedroom" loading="lazy"></button>
+      <button type="button" aria-label="Open image: swimming pool"><img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=800&q=70" alt="Resort-style swimming pool" loading="lazy"></button>
+      <button type="button" aria-label="Open image: community"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=70" alt="Modern high-rise residential towers" loading="lazy"></button>
+    </div>
+  </div>
+</section>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Close">&times;</button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous image">&#8249;</button>
+  <img id="lbImg" src="" alt="">
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Next image">&#8250;</button>
+</div>
+
+<!-- ============ 8. WHY US + TESTIMONIALS ============ -->
+<section id="why">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Why Choose Us</span>
+      <h2>Built on trust, delivered on time</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item reveal"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><use href="#i-shield"/></svg><h3>RERA Registered</h3><p>Fully transparent, legally compliant project with clear titles and approvals.</p></div>
+      <div class="why-item reveal"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><use href="#i-key"/></svg><h3>On-time Delivery</h3><p>A track record of 15+ projects handed over on or before the committed date.</p></div>
+      <div class="why-item reveal"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><use href="#i-wallet"/></svg><h3>Flexible Payment Plans</h3><p>Pre-approved loans from leading banks and construction-linked payment options.</p></div>
+    </div>
+    <div class="testimonials">
+      <figure class="quote reveal"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><p>"The site visit was seamless and the team answered every question honestly. The 3 BHK layout is spacious and full of light."</p><figcaption class="who"><span class="avatar">RS</span><span><b>Rohit &amp; Sneha S.</b><small>3 BHK Buyer</small></span></figcaption></figure>
+      <figure class="quote reveal"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><p>"Being close to ITPL and the metro cut my commute dramatically. Great value for the amenities on offer."</p><figcaption class="who"><span class="avatar">AK</span><span><b>Ananya K.</b><small>2 BHK Buyer, IT Professional</small></span></figcaption></figure>
+      <figure class="quote reveal"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><p>"Transparent pricing, quick loan assistance and no hidden surprises. We recommended it to our friends too."</p><figcaption class="who"><span class="avatar">MV</span><span><b>Manoj V.</b><small>2 BHK Buyer</small></span></figcaption></figure>
+    </div>
+    <p class="note">Testimonials are placeholders for demo purposes.</p>
+  </div>
+</section>
+
+<!-- ============ 9. BOOKING FORM ============ -->
+<section class="booking" id="book">
+  <div class="container booking-grid">
+    <div class="reveal">
+      <span class="eyebrow">Book a Free Site Visit</span>
+      <h2>See your future home in person</h2>
+      <p>Pick a date and time that suits you. Our sales advisor will walk you through the model apartment, layouts and payment plans.</p>
+      <ul class="checks">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><use href="#i-check"/></svg> Free pick-up from Whitefield Metro on request</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><use href="#i-check"/></svg> Walkthrough of model flats and amenities</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><use href="#i-check"/></svg> On-the-spot home loan guidance</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><use href="#i-check"/></svg> No obligation, no pressure</li>
+      </ul>
+    </div>
+
+    <div class="form-card reveal" id="bookCard">
+      <form id="bookForm" novalidate data-form>
+        <h3>Schedule Your Visit</h3>
+        <p class="sub">Takes less than a minute.</p>
+        <div class="row">
+          <div class="field">
+            <label for="b-name">Full Name</label>
+            <input id="b-name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+            <span class="error">Please enter your full name (min 2 characters).</span>
+          </div>
+          <div class="field">
+            <label for="b-phone">Mobile Number</label>
+            <input id="b-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="10-digit number" maxlength="10" required>
+            <span class="error">Enter a valid 10-digit Indian mobile number.</span>
+          </div>
+        </div>
+        <div class="field">
+          <label for="b-email">Email</label>
+          <input id="b-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          <span class="error">Please enter a valid email address.</span>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="b-config">Preferred Configuration</label>
+            <select id="b-config" name="config" required>
+              <option value="">Select</option>
+              <option>2 BHK</option>
+              <option>3 BHK</option>
+            </select>
+            <span class="error">Please choose a configuration.</span>
+          </div>
+          <div class="field">
+            <label for="b-date">Preferred Date</label>
+            <input id="b-date" name="date" type="date" required>
+            <span class="error">Please pick a date from today onwards.</span>
+          </div>
+        </div>
+        <div class="field">
+          <label for="b-time">Preferred Time Slot</label>
+          <select id="b-time" name="time" required>
+            <option value="">Select a slot</option>
+            <option>10:00 AM – 12:00 PM</option>
+            <option>12:00 PM – 2:00 PM</option>
+            <option>2:00 PM – 4:00 PM</option>
+            <option>4:00 PM – 6:30 PM</option>
+          </select>
+          <span class="error">Please choose a time slot.</span>
+        </div>
+        <div class="field">
+          <label for="b-msg">Message (optional)</label>
+          <textarea id="b-msg" name="message" placeholder="Any specific requirement? e.g., budget, floor preference"></textarea>
+        </div>
+        <label class="consent"><input type="checkbox" name="consent" required> <span>I agree to be contacted by Skyline Whitefield Residences via call, SMS, email or WhatsApp.</span></label>
+        <button class="btn btn-gold btn-block" type="submit">Confirm Site Visit</button>
+        <p class="fineprint">Demo form: no data is stored or sent.</p>
+      </form>
+      <div class="form-success" role="status" aria-live="polite">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"/><use href="#i-check"/></svg>
+        <h3>Site visit requested!</h3>
+        <p id="bookSummary">We'll confirm your slot shortly.</p>
+        <p style="margin-top:8px"><em>(Demo only: no data was sent.)</em></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10. FAQ ============ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>Questions, answered</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">What is the starting price of the apartments? <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><use href="#i-plus"/></svg></button>
+        <div class="faq-a"><p>2 BHK homes start from ₹1.15 Cr* and 3 BHK homes from ₹1.65 Cr*. Final pricing depends on floor, facing and view, and excludes registration, GST and other statutory charges.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">Is home loan assistance available? <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><use href="#i-plus"/></svg></button>
+        <div class="faq-a"><p>Yes. The project is pre-approved by leading banks and housing finance companies, and our team helps with documentation and eligibility checks.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">When is the possession date? <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><use href="#i-plus"/></svg></button>
+        <div class="faq-a"><p>Possession is scheduled for December 2028, as per the RERA-registered timeline.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">Is the project RERA registered? <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><use href="#i-plus"/></svg></button>
+        <div class="faq-a"><p>Yes. The project is registered with Karnataka RERA (Reg. No. PRM/KA/RERA/XXXX, placeholder). You can verify details on the official K-RERA website.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">How much parking is provided? <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><use href="#i-plus"/></svg></button>
+        <div class="faq-a"><p>Every 2 BHK includes 1 covered car park and every 3 BHK includes 2 covered car parks, plus visitor parking and EV charging points.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11. CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Contact Us</span>
+      <h2>Visit our sales gallery</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card reveal"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><use href="#i-pin"/></svg><h3>Address</h3><p>Skyline Whitefield Residences,<br>Near ITPL Main Road, Whitefield,<br>Bengaluru, Karnataka 560066</p></div>
+      <div class="contact-card reveal"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><use href="#i-phone"/></svg><h3>Phone</h3><p><a href="tel:+919876543210">+91 98765 43210</a></p><a class="btn wa-btn" href="https://wa.me/919876543210?text=Hi%2C%20I%27m%20interested%20in%20Skyline%20Whitefield%20Residences" target="_blank" rel="noopener">WhatsApp Us</a></div>
+      <div class="contact-card reveal"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><use href="#i-mail"/></svg><h3>Email</h3><p><a href="mailto:sales@skylinewhitefield.example">sales@skylinewhitefield.example</a></p></div>
+      <div class="contact-card reveal"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><use href="#i-clock"/></svg><h3>Office Hours</h3><p>Mon – Sun<br>10:00 AM – 7:00 PM</p></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ 12. FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="foot-top">
+      <a href="#top" class="logo" aria-label="Back to top">
+        <svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect width="40" height="40" rx="9" fill="#13315c"/><path d="M9 31V17l7-5v19M16 31V9l8-4v26M24 31V15l7 4v12" stroke="#c9a24b" stroke-width="2" stroke-linejoin="round"/></svg>
+        <span>Skyline Whitefield<small>RESIDENCES</small></span>
+      </a>
+      <div class="foot-links">
+        <a href="#overview">Overview</a><a href="#configurations">Configurations</a><a href="#amenities">Amenities</a><a href="#location">Location</a><a href="#faq">FAQ</a><a href="#" onclick="return false">Privacy Policy</a><a href="#" onclick="return false">Terms</a>
+      </div>
+    </div>
+    <p class="disclaimer"><strong>RERA Disclaimer:</strong> Karnataka RERA Reg. No. PRM/KA/RERA/XXXX (placeholder). This website is for informational purposes only and does not constitute an offer or contract. Images, floor plans, specifications and prices are indicative, subject to change without prior notice, and may differ from the actual product. Please verify project details at the official K-RERA portal before purchase.</p>
+    <p class="copy">&copy; <span id="year">2026</span> Skyline Whitefield Residences. All rights reserved. Demo page for presentation purposes.</p>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp + Call buttons -->
+<a class="float float-wa" href="https://wa.me/919876543210?text=Hi%2C%20I%27m%20interested%20in%20Skyline%20Whitefield%20Residences" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg></a>
+<a class="float float-call" href="tel:+919876543210" aria-label="Call us"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><use href="#i-phone"/></svg></a>
+
+<script>
+/* ==========================================================
+   JS: vanilla, no dependencies
+   ========================================================== */
+(function(){
+  'use strict';
+
+  /* Footer year */
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* Mobile menu */
+  var toggle = document.getElementById('menuToggle');
+  var links = document.getElementById('navLinks');
+  toggle.addEventListener('click', function(){
+    var open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+  links.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){ links.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); }
+  });
+
+  /* Scroll reveal animation */
+  var revealEls = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ en.target.classList.add('visible'); io.unobserve(en.target); }
+      });
+    }, {threshold:0.12});
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add('visible'); });
+  }
+
+  /* "Enquire Now" buttons pre-select configuration in booking form */
+  document.querySelectorAll('[data-prefill]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      document.getElementById('b-config').value = btn.getAttribute('data-prefill');
+    });
+  });
+
+  /* Booking date: no past dates */
+  var dateInput = document.getElementById('b-date');
+  var today = new Date();
+  var iso = today.getFullYear() + '-' + String(today.getMonth()+1).padStart(2,'0') + '-' + String(today.getDate()).padStart(2,'0');
+  dateInput.min = iso;
+
+  /* ---------- Form validation ---------- */
+  var phoneRe = /^[6-9]\d{9}$/;                 // Indian mobile: 10 digits starting 6-9
+  var emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+  function setInvalid(field, bad){ if(field) field.classList.toggle('invalid', bad); }
+
+  function validateField(input){
+    var field = input.closest('.field');
+    var v = (input.value || '').trim();
+    var bad = false;
+    switch(input.name){
+      case 'name':  bad = v.length < 2; break;
+      case 'phone': bad = !phoneRe.test(v); break;
+      case 'email': bad = !emailRe.test(v); break;
+      case 'config':
+      case 'time':  bad = v === ''; break;
+      case 'date':  bad = v === '' || v < iso; break;
+    }
+    setInvalid(field, bad);
+    return !bad;
+  }
+
+  document.querySelectorAll('form[data-form]').forEach(function(form){
+    var fields = form.querySelectorAll('input[name],select[name]');
+
+    /* Phone: digits only */
+    var phone = form.querySelector('input[name="phone"]');
+    if(phone) phone.addEventListener('input', function(){ phone.value = phone.value.replace(/\D/g,'').slice(0,10); });
+
+    /* Live re-validation once a field has been marked invalid */
+    fields.forEach(function(inp){
+      if(inp.type === 'checkbox') return;
+      inp.addEventListener('blur', function(){ validateField(inp); });
+      inp.addEventListener('input', function(){
+        if(inp.closest('.field').classList.contains('invalid')) validateField(inp);
+      });
+    });
+
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var ok = true, firstBad = null;
+      fields.forEach(function(inp){
+        if(inp.type === 'checkbox'){
+          var consent = inp.closest('.consent');
+          var bad = !inp.checked;
+          consent.classList.toggle('invalid', bad);
+          if(bad){ ok = false; firstBad = firstBad || inp; }
+          return;
+        }
+        if(!validateField(inp)){ ok = false; firstBad = firstBad || inp; }
+      });
+      if(!ok){ firstBad.focus(); return; }
+
+      /* DEMO ONLY: replace this block with fetch() to your backend / CRM / Formspree */
+      if(form.id === 'bookForm'){
+        var d = new FormData(form);
+        document.getElementById('bookSummary').textContent =
+          'Thanks ' + d.get('name') + '! We\'ll confirm your ' + d.get('config') + ' visit on ' + d.get('date') + ' (' + d.get('time') + ') shortly.';
+      }
+      form.closest('.form-card').classList.add('done');
+    });
+  });
+
+  /* ---------- FAQ accordion ---------- */
+  document.querySelectorAll('.faq-q').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.parentElement;
+      var panel = item.querySelector('.faq-a');
+      var isOpen = item.classList.contains('open');
+      /* close others */
+      document.querySelectorAll('.faq-item.open').forEach(function(o){
+        o.classList.remove('open');
+        o.querySelector('.faq-a').style.maxHeight = null;
+        o.querySelector('.faq-q').setAttribute('aria-expanded','false');
+      });
+      if(!isOpen){
+        item.classList.add('open');
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+        btn.setAttribute('aria-expanded','true');
+      }
+    });
+  });
+
+  /* ---------- Gallery lightbox ---------- */
+  var gridBtns = Array.prototype.slice.call(document.querySelectorAll('#galleryGrid button'));
+  var lb = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lbImg');
+  var idx = 0, lastFocus = null;
+
+  function show(i){
+    idx = (i + gridBtns.length) % gridBtns.length;
+    var img = gridBtns[idx].querySelector('img');
+    lbImg.src = img.src.replace(/w=\d+/, 'w=1800');
+    lbImg.alt = img.alt;
+  }
+  function openLb(i){ lastFocus = document.activeElement; show(i); lb.classList.add('open'); document.body.style.overflow='hidden'; document.getElementById('lbClose').focus(); }
+  function closeLb(){ lb.classList.remove('open'); document.body.style.overflow=''; if(lastFocus) lastFocus.focus(); }
+
+  gridBtns.forEach(function(b,i){ b.addEventListener('click', function(){ openLb(i); }); });
+  document.getElementById('lbClose').addEventListener('click', closeLb);
+  document.getElementById('lbPrev').addEventListener('click', function(){ show(idx-1); });
+  document.getElementById('lbNext').addEventListener('click', function(){ show(idx+1); });
+  lb.addEventListener('click', function(e){ if(e.target === lb) closeLb(); });
+  document.addEventListener('keydown', function(e){
+    if(!lb.classList.contains('open')) return;
+    if(e.key === 'Escape') closeLb();
+    if(e.key === 'ArrowLeft') show(idx-1);
+    if(e.key === 'ArrowRight') show(idx+1);
+  });
+})();
+</script>
+</body>
+</html>
